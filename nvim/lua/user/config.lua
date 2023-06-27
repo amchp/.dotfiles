@@ -21,3 +21,7 @@ opt.backup = false
 opt.colorcolumn = "100"
 wo.signcolumn = "yes"
 o.pumheight = 10
+local function open_nvim_tree()
+	require("nvim-tree.api").tree.open()
+end
+vim.api.nvim_create_autocmd({ "VimEnter" }, { callback = open_nvim_tree })
