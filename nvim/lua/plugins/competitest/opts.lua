@@ -1,5 +1,5 @@
 require("competitest").setup({
-	local_config_file_name = ".competitest.lua",
+	local_config_file_name = "opts.lua",
 
 	floating_border = "rounded",
 	floating_border_highlight = "FloatBorder",
@@ -103,7 +103,7 @@ require("competitest").setup({
 	output_compare_method = "squish",
 	view_output_diff = false,
 
-	testcases_directory = ".",
+	testcases_directory = ".testcases/",
 	testcases_use_single_file = false,
 	testcases_auto_detect_storage = true,
 	testcases_single_file_format = "$(FNOEXT).testcases",
@@ -112,5 +112,5 @@ require("competitest").setup({
 
 	companion_port = 27121,
 	receive_print_message = true,
-	template_file = false,
+	template_file = "/Users/alejandromcewen/Documents/Estudios/ProgramacionCompetitiva/templates/template.$(FEXT)",
 })

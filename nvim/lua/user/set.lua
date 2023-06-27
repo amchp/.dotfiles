@@ -17,4 +17,8 @@ set("n", "<leader>j", "<cmd>lprev<CR>zz")
 set("n", "<leader>w", "<cmd>wa<cr>")
 set("n", "<leader>q", "<cmd>q<cr>")
 set("n", "<leader>x", "<cmd>wqa<cr>")
-set("n", "<leader>tt", "<cmd>r /Users/alejandromcewen/Documents/Estudios/ProgramacionCompetitiva/template.cpp<cr>")
+set(
+	"n",
+	"<leader>tt",
+	"<cmd>r /Users/alejandromcewen/Documents/Estudios/ProgramacionCompetitiva/templates/template.cpp<cr>"
+)
