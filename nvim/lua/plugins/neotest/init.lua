@@ -21,7 +21,7 @@ local Plugin = {
 			},
 		}, neotest_ns)
 		local neotest = require("neotest")
-		vim.keymap.set("n", "<c-m>", neotest.summary.toggle, { remap = false, silent = true })
+		vim.keymap.set("n", "<leader><c-m>", neotest.summary.toggle, { remap = false, silent = true })
 	end,
 	config = true,
 }
