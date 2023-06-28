@@ -22,10 +22,10 @@ local Opts = {
 	}),
 	sources = cmp.config.sources({
 		{ name = "luasnip" },
-		{ name = "nvim_lsp", keyword_length = 4 },
-		{ name = "nvim_lua", keyword_length = 4 },
-		{ name = "buffer", keyword_length = 4 },
-		{ name = "path", keyword_length = 4 },
+		{ name = "nvim_lsp", keyword_length = 1 },
+		{ name = "nvim_lua", keyword_length = 1 },
+		{ name = "buffer", keyword_length = 1 },
+		{ name = "path", keyword_length = 1 },
 	}),
 	formatting = {
 		format = lspkind.cmp_format({
