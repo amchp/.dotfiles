@@ -10,10 +10,10 @@ local Plugin = {
 				local opts = { buffer = ev.buf, silent = true }
 
 				set("n", "<c-t>", buf.hover, opts)
-				set("n", "ld", buf.definition, opts)
-				set("n", "li", buf.implementation, opts)
-				set("n", "lt", buf.type_definition, opts)
-				set("n", "lr", buf.references, opts)
+				set("n", "zd", buf.definition, opts)
+				set("n", "zi", buf.implementation, opts)
+				set("n", "zt", buf.type_definition, opts)
+				set("n", "zr", buf.references, opts)
 				set({ "n", "v" }, "<leader>ca", buf.code_action, opts)
 				set("n", "<c-e>", require("renamer").rename, { noremap = true, silent = true })
 			end,
