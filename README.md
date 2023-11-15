@@ -61,6 +61,6 @@ Then, go to this [page](https://github.com/junegunn/fzf#installation) and instal
 This [page](https://www.geekbits.io/how-to-install-nerd-fonts-on-mac/) has the tutorial.
 Install command
 ```bash
-brew install --cask font-jetbrains-mono
+brew install --cask font-jetbrains-mono-nerd-font
 ```
 
