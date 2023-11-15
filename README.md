@@ -17,10 +17,31 @@ Go to this [page](https://brew.sh/) and install HomeBrew.
 ## Install TMUX
 Go to this [page](https://github.com/tmux/tmux/wiki/Installing) and install TMUX.
 
-## Install Oh My ZSH
+## Install TMUX TMP
+Go to this [page](https://github.com/tmux-plugins/tpm) and install TMP.
 
-GO to this [page](https://github.com/ohmyzsh/ohmyzsh) and install Oh My ZSH.
+# Configure TMUX
+
+Run
+```bash
+tmux source-file ~/.config/tmux/tmux.conf
+```
+Then press ctrl-A I to install the TMUX packages.
 
 ## Install NVIM
 
-Go to this [page](https://github.com/neovim/neovim/wiki/Installing-Neovim) and install NVIM
+Go to this [page](https://github.com/neovim/neovim/wiki/Installing-Neovim) and install NVIM (probably with brew)
+
+# Install NVIM plugins
+
+Run
+
+```bash
+nvim .
+```
+and the plugins should install themselves.
+
+
+## Install Oh My ZSH
+
+GO to this [page](https://github.com/ohmyzsh/ohmyzsh) and install Oh My ZSH.
