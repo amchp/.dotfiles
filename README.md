@@ -65,21 +65,21 @@ and the plugins should install themselves.
 
 ## Reference pages
 
-[Kitty](https://sw.kovidgoyal.net/kitty/binary/).
+[Kitty](https://sw.kovidgoyal.net/kitty/binary/)
 
-[Oh My ZSH](https://github.com/ohmyzsh/ohmyzsh).
+[Oh My ZSH](https://github.com/ohmyzsh/ohmyzsh)
 
 [HomeBrew](https://brew.sh/)
 
-[TMUX](https://github.com/tmux/tmux/wiki/Installing).
+[TMUX](https://github.com/tmux/tmux/wiki/Installing)
 
 [TMUX TMP](https://github.com/tmux-plugins/tpm)
 
-[NVIM](https://github.com/neovim/neovim/wiki/Installing-Neovim).
+[NVIM](https://github.com/neovim/neovim/wiki/Installing-Neovim)
 
-[ZSH-Syntax-Highlighting](https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/INSTALL.md).
+[ZSH-Syntax-Highlighting](https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/INSTALL.md)
 
-[ZSH-Autosuggestions](https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md).
+[ZSH-Autosuggestions](https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md)
 
 [FD](https://github.com/sharkdp/fd#installation)
 
@@ -87,5 +87,5 @@ and the plugins should install themselves.
 
 [Zoxide](https://github.com/ajeetdsouza/zoxide)
 
-[Nerd fonts](https://www.nerdfonts.com/font-downloads).
+[Nerd fonts](https://www.nerdfonts.com/font-downloads)
 
