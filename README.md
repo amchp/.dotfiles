@@ -1,26 +1,52 @@
 # .dotfiles
 
-## Copy .dotfiles
+## Install command
 
+### Copy repository
 
 ```bash
 git clone https://github.com/amchp/.dotfiles.git .config
 ```
+### Download Kitty
 
-## Install Kitty
-Go to this [page](https://sw.kovidgoyal.net/kitty/binary/) and install kitty
+```bash
+curl -L https://sw.kovidgoyal.net/kitty/installer.sh | sh /dev/stdin
+```
 
-## Install HomeBrew (Mac)
+### Download Oh my ZSH
 
-Go to this [page](https://brew.sh/) and install HomeBrew.
+```bash
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
+cp ~/.config/.zshrc ~/
+```
+Reload the terminal to get the configuration running.
 
-## Install TMUX
-Go to this [page](https://github.com/tmux/tmux/wiki/Installing) and install TMUX.
+### Download Brew (Takes a while)
 
-## Install TMUX TMP
-Go to this [page](https://github.com/tmux-plugins/tpm) and install TMP.
+```bash
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
 
-# Configure TMUX
+### Download everything with brew
+```bash
+brew install tmux neovim zsh-syntax-highlighting zsh-autosuggestions fd fzf zoxide
+```
+
+### Download TMUX TMP
+
+```bash
+git clone https://github.com/tmux-plugins/tpm ~/.config/tmux/plugins/tpm
+```
+
+### Download JetBrains Nerd Fonts
+
+```bash
+brew tap homebrew/cask-fonts
+brew install --cask font-jetbrains-mono-nerd-font
+brew install --cask font-symbols-only-nerd-font
+```
+
+### Configure TMUX
 
 Run
 ```bash
@@ -28,11 +54,7 @@ tmux source-file ~/.config/tmux/tmux.conf
 ```
 Then press ctrl-A I to install the TMUX packages.
 
-## Install NVIM
-
-Go to this [page](https://github.com/neovim/neovim/wiki/Installing-Neovim) and install NVIM (probably with brew)
-
-# Install NVIM plugins
+### Install NVIM plugins
 
 Run
 
@@ -41,26 +63,29 @@ nvim .
 ```
 and the plugins should install themselves.
 
+## Reference pages
 
-## Install Oh My ZSH
+[Kitty](https://sw.kovidgoyal.net/kitty/binary/).
 
-Go to this [page](https://github.com/ohmyzsh/ohmyzsh) and install Oh My ZSH.
-Reload the terminal to get the configured back-up and running.
+[Oh My ZSH](https://github.com/ohmyzsh/ohmyzsh).
 
-## Install ZSH plugins
+[HomeBrew](https://brew.sh/)
 
-First, go to this [page](https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/INSTALL.md) and install syntax highlighting.
-Second, go to this [page](https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md) and download syntax highlighting.
+[TMUX](https://github.com/tmux/tmux/wiki/Installing).
 
-## Install FD and FZF
-First, go to this [page](https://github.com/sharkdp/fd#installation) and install FD.
-Then, go to this [page](https://github.com/junegunn/fzf#installation) and install FZF.
+[TMUX TMP](https://github.com/tmux-plugins/tpm)
 
-## Install Fonts
+[NVIM](https://github.com/neovim/neovim/wiki/Installing-Neovim).
 
-This [page](https://www.geekbits.io/how-to-install-nerd-fonts-on-mac/) has the tutorial.
-Install command
-```bash
-brew install --cask font-jetbrains-mono-nerd-font
-```
+[ZSH-Syntax-Highlighting](https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/INSTALL.md).
+
+[ZSH-Autosuggestions](https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md).
+
+[FD](https://github.com/sharkdp/fd#installation)
+
+[FZF](https://github.com/junegunn/fzf#installation) 
+
+[Zoxide](https://github.com/ajeetdsouza/zoxide)
+
+[Nerd fonts](https://www.nerdfonts.com/font-downloads).
 
