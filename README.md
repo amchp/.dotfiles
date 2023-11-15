@@ -44,4 +44,23 @@ and the plugins should install themselves.
 
 ## Install Oh My ZSH
 
-GO to this [page](https://github.com/ohmyzsh/ohmyzsh) and install Oh My ZSH.
+Go to this [page](https://github.com/ohmyzsh/ohmyzsh) and install Oh My ZSH.
+Reload the terminal to get the configured back-up and running.
+
+## Install ZSH plugins
+
+First, go to this [page](https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/INSTALL.md) and install syntax highlighting.
+Second, go to this [page](https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md) and download syntax highlighting.
+
+## Install FD and FZF
+First, go to this [page](https://github.com/sharkdp/fd#installation) and install FD.
+Then, go to this [page](https://github.com/junegunn/fzf#installation) and install FZF.
+
+## Install Fonts
+
+This [page](https://www.geekbits.io/how-to-install-nerd-fonts-on-mac/) has the tutorial.
+Install command
+```bash
+brew install --cask font-jetbrains-mono
+```
+
