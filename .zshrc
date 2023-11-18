@@ -72,8 +72,6 @@ ZSH_THEME="robbyrussell"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
   git
-  zsh-syntax-highlighting
-  zsh-autosuggestions
   docker
   tmux
   z
@@ -116,24 +114,13 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
-export FZF_DEFAULT_COMMAND='fd --type file --follow --hidden --exclude .git'
-export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 
 
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/Users/alejandromcewen/miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
-if [ $? -eq 0 ]; then
-    eval "$__conda_setup"
-else
-    if [ -f "/Users/alejandromcewen/miniconda3/etc/profile.d/conda.sh" ]; then
-        . "/Users/alejandromcewen/miniconda3/etc/profile.d/conda.sh"
-    else
-        export PATH="/Users/alejandromcewen/miniconda3/bin:$PATH"
-    fi
-fi
-unset __conda_setup
 eval "$(zoxide init zsh)"
-alias t="/Users/alejandromcewen/.config/tmux/plugins/t-smart-tmux-session-manager/bin/t"
+alias t="~/.config/tmux/plugins/t-smart-tmux-session-manager/bin/t"
 alias g++='g++ -std=c++17'
+source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
