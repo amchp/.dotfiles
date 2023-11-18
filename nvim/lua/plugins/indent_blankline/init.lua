@@ -1,14 +1,9 @@
 local Plugin = {
     "lukas-reineke/indent-blankline.nvim",
     dependencies = { { "EdenEast/nightfox.nvim" } },
-    init = function()
-        vim.opt.list = true
-        vim.opt.termguicolors = false
-        vim.opt.listchars:append("eol:↴")
-    end,
+    main = "ibl",
     opts = function()
-        return require("plugins.indent_blankline.opts")
+        return require("ibl").setup()
     end,
-    config = true,
 }
 return Plugin

@@ -14,7 +14,7 @@ local ignore_patterns = {
 
 local picker_config = {
 	previewer = false,
-	hidden = true,
+	hidden = false,
 	file_ignore_patterns = ignore_patterns,
 }
 

@@ -5,7 +5,6 @@ local Plugin = {
         { "nvim-lua/plenary.nvim" },
         { "EdenEast/nightfox.nvim" },
         { "kyazdani42/nvim-web-devicons" },
-        { "nvim-telescope/telescope-dap.nvim" },
         { "nvim-telescope/telescope-fzf-native.nvim", build = "make" },
     },
     opts = function()
