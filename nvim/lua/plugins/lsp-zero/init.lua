@@ -81,7 +81,7 @@ local Plugin = {
         set("n", "zi", buf.implementation, opts)
         set("n", "zt", buf.type_definition, opts)
         set("n", "zr", buf.references, opts)
-        set({ "n", "v" }, "<leader>ca", buf.code_action, opts)
+        set({ "n", "v" }, "<leader>za", buf.code_action, opts)
         set("n", "<c-e>", require("renamer").rename, { noremap = true, silent = true })
         set('n', 'gr', '<cmd>Telescope lsp_references<cr>', opts)
       end)
