@@ -29,7 +29,7 @@ Reload the terminal to get the configuration running.
 
 ### Download everything with brew
 ```bash
-brew install tmux neovim zsh-syntax-highlighting zsh-autosuggestions fd fzf zoxide gh
+brew install tmux neovim zsh-syntax-highlighting zsh-autosuggestions fd fzf zoxide gh ripgrep
 ```
 
 ### Download TMUX TMP
