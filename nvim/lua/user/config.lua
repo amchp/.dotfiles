@@ -30,6 +30,9 @@ opt.cmdheight = 2
 opt.colorcolumn = "100"
 wo.signcolumn = "yes"
 o.pumheight = 10
+o.foldmethod = "indent"
+o.foldenable = true
+o.foldlevel = 0
 
 local function open_nvim_tree()
 	require("nvim-tree.api").tree.open()

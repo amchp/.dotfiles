@@ -24,7 +24,7 @@ if [[ $# -eq 1 ]]; then
 else
     # If someone wants to make this extensible, i'll accept
     # PR
-    selected=$(find ~/ ~/personal ~/Documents/Estudios ~/Documents/Work ~/Documents/Projects -mindepth 1 -maxdepth 1 -type d | fzf)
+    selected=$(find ~/ ~/Documents/Estudios ~/Documents/Work ~/Documents/Projects -mindepth 1 -maxdepth 1 -type d | fzf)
 fi
 
 if [[ -z $selected ]]; then
