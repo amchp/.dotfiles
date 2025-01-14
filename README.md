@@ -32,6 +32,14 @@ Reload the terminal to get the configuration running.
 brew install tmux neovim zsh-syntax-highlighting zsh-autosuggestions fd fzf zoxide gh ripgrep
 ```
 
+### Download brew install programing languages
+```bash
+brew install python go gcc nvm
+```
+```
+nvm install --lts
+```
+
 ### Download TMUX TMP
 
 ```bash
