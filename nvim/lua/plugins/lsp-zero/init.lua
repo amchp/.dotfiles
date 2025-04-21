@@ -76,6 +76,7 @@ local Plugin = {
                 local set = vim.keymap.set
                 local buf = vim.lsp.buf
                 local opts = { buffer = bufnr, silent = true }
+                vim.wo.signcolumn = 'yes';
                 set("n", "<c-t>", buf.hover, opts)
                 set("n", "<leader>zd", buf.definition, opts)
                 set("n", "<leader>zi", buf.implementation, opts)
@@ -88,11 +89,24 @@ local Plugin = {
                 set('n', 'gr', '<cmd>Telescope lsp_references<cr>', opts)
             end)
 
+            vim.diagnostic.config({
+              virtual_text = true,
+              signs        = true,
+              underline    = true,
+              update_in_insert = false,
+            })
+            vim.diagnostic.config({
+                virtual_text = {
+                spacing = 4,
+                prefix  = '●',
+              },
+            })
+
+
             require('mason-lspconfig').setup({
                 ensure_installed = {
                     "lua_ls",
-                    "tsserver",
-                    "pyright",
+                    "pylsp",
                     "clangd",
                     "rust_analyzer",
                     "gopls",
